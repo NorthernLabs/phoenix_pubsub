@@ -75,6 +75,7 @@ defmodule Phoenix.Tracker.Shard do
   end
   def list(shard_name, topic) when is_atom(shard_name) do
     State.get_by_topic(shard_name, topic)
+  end
 
   @doc false
   def dirty_list(shard_name, topic) do
